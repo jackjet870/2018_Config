@@ -2,6 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 namespace xk_System.Db
 {
+	class ServerListDB:DbBase
+	{
+		/// <summary>
+		/// 区ID
+		/// </summary>
+		public readonly int serverId;
+		/// <summary>
+		/// 区名
+		/// </summary>
+		public readonly string serverName;
+	}
+
 	class Sheet5DB:DbBase
 	{
 		/// <summary>
