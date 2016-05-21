@@ -1,3 +1,5 @@
+import "Proto/proto_struct.proto";
+
 //请求聊天信息 C->S 消息代码:1100
 message ClientSendData
 {
@@ -39,6 +41,29 @@ message csLoginGame
 message scLoginGame
 {
 	optional bool result=1;
+}
+
+//获取服务器列表1103
+message csServerList
+{
+	
+}
+
+message scServerList
+{
+	repeated struct_serverList ServerList=1;
+}
+
+//进入游戏1104
+message csEnterGame
+{
+	optional int32 ServerId=1;
+}
+
+message scEnterGame
+{
+
+	optional int32 ServerId=1;
 }
 
 
