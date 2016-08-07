@@ -66,5 +66,11 @@ message scEnterGame
 	optional int32 ServerId=1;
 }
 
+//请求聊天信息 C->S 消息代码:1105
+message csChatInfo
+{
+	optional string SenderName=1;
+	optional string TalkMsg = 2;				//聊天信息(25中文字符)
+}
 
 
